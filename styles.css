@@ -1,0 +1,200 @@
+/* --- 1. ESTILOS GENERALES --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- 2. ENCABEZADO (Header) --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky; /* Barra fija al bajar */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #1e8449; /* Verde oscuro (Bosque) */
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #27ae60; /* Verde vibrante al pasar el mouse */
+}
+
+/* Botón "Únete" del menú */
+.btn-unete {
+    background-color: #27ae60; /* Verde principal */
+    color: #fff !important; /* Texto blanco forzado */
+    padding: 8px 25px;
+    border-radius: 50px; /* Bordes más redondos */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-unete:hover {
+    background-color: #1e8449; /* Oscurece al pasar el mouse */
+}
+
+/* --- 3. SECCIÓN HERO (Portada) --- */
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #145a32; /* Verde muy oscuro para máximo contraste */
+    line-height: 1.2;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Botón Principal (Comienza Ya) */
+.btn-primary {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1e8449;
+    transform: translateY(-2px); /* Pequeño salto */
+}
+
+/* Botón Secundario (Únete) */
+.btn-secondary {
+    border: 2px solid #27ae60;
+    color: #27ae60;
+    padding: 13px 38px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #eafaf1; /* Fondo verde muy clarito */
+    color: #1e8449;
+}
+
+/* --- 4. SECCIÓN DE PASOS (Tarjetas) --- */
+#pasos {
+    background-color: #f4fcf7; /* Fondo verde menta muy suave */
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.section-header h3 {
+    font-size: 2.2rem;
+    color: #1e8449;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-top: 5px solid #27ae60; /* Borde superior verde decorativo */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h4 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: #1e8449;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.card a {
+    color: #27ae60;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.card a:hover {
+    color: #145a32;
+    text-decoration: underline;
+}
+
+/* --- 5. FOOTER --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #145a32; /* Verde muy oscuro */
+    color: #fff;
+    font-size: 0.9rem;
+}
